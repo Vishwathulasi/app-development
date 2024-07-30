@@ -1,0 +1,28 @@
+.cart-container {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+  }
+  
+  .cart-item h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .cart-item p {
+    margin: 5px 0;
+  }
+  
