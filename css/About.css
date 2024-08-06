@@ -1,0 +1,75 @@
+/* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    gap: 0px; /* Space between image and content */
+    font-family: 'Roboto', sans-serif;
+    min-height: 800px;
+}
+
+.about-pic {
+    flex: 1;
+}
+
+.about-pic img {
+    width: 100%;
+    max-width: 500px; /* Adjust the max-width as needed */
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px; /* Adjust the max-width as needed */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px;
+}
+
+.about-content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-pic img {
+        width: 100%;
+        max-width: none; /* Ensure image takes full width */
+    }
+
+    .about-content {
+        max-width: none;
+        padding: 0;
+    }
+
+    .about-content h3 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h3 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+}

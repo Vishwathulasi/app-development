@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.event-container {
+    padding: 50px;
+    background-color: black;
+    padding-top: 150px;
+    min-height: 100vh;
+}
+
+.event-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    padding: 50px;
+    line-height: 1.2; /* Line height for better readability */
+}
+
+.event-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-card {
+    width: 100%; /* Ensure card takes up full width of its grid cell */
+    max-width: 400px; /* Increase width to desired size */
+    height: 400px; /* Adjust height automatically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.event-card:hover {
+    animation: bounceIn 0.5s;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+    z-index: 2;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between; /* Space out the description and button */
+    margin-top: auto;
+    padding: 16px; /* Add padding to the card actions area */
+}
+.event-title{
+    text-align: center;
+    font-weight: 500;
+}
+.event-btn{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 0;
+    background-color: black !important;
+}
+.event-btn :hover{
+    color: white;
+}
+.event-btn p{
+    color: white;
+    font-weight:lighter;
+}
+@media (max-width: 768px) {
+    .event-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

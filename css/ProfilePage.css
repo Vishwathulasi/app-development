@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Add a base font-family */
+  background-color: black;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px; /* Adjusted padding to ensure content is below the navbar */
+  background-color: black; /* Background color */
+  min-height: 100vh; /* Ensure container takes full height minus navbar */
+  padding: 40px 20px; /* Add extra padding for increased height */
+}
+
+.profile-card {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.profile-card h2 {
+  margin-bottom: 20px;
+  color: #333; /* Dark text color for headings */
+}
+
+.profile-card .MuiTextField-root {
+  margin-bottom: 16px;
+}
+
+.profile-card .MuiButton-root {
+  margin-top: 16px;
+}
+
+.profile-btn {
+  background-color: white; /* White background for the button */
+  color: black; /* Black text color */
+  border: 1px solid black; /* Black border */
+}
+
+.profile-btn:hover {
+  background-color: black; /* Black background on hover */
+  color: white; /* White text color on hover */
+}
+
+.profile-card p {
+  font-size: 16px;
+  color: #555; /* Dark gray text color for paragraph */
+  margin-bottom: 16px; /* Space below each paragraph */
+}
+
+.profile-card p strong {
+  color: #333; /* Darker color for labels */
+}

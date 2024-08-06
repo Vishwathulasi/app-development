@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.large-container{
+    background-color: black;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+  /* Admin profile container */
+  .profile-admin-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .profile-admin-details {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    color: black;
+  }
+  
+  .profile-admin-view p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-admin-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile-admin-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .profile-admin-buttons .MuiButton-root {
+    flex: 1;
+  }
+  .profile-admin-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  .profile-admin-btn:hover{
+    background-color: black;
+    color: white;
+  }
+  @media (max-width: 600px) {
+    .profile-admin-container {
+      padding: 10px;
+    }
+  
+    .profile-admin-edit-form,
+    .profile-admin-buttons {
+      flex-direction: column;
+    }
+  
+    .profile-admin-buttons .MuiButton-root {
+      width: 100%;
+    }
+  }
+  

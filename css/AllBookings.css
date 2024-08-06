@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.all-bookings-large-container{
+    background-color: black;
+}
+.all-bookings-container {
+    padding: 150px 20px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .all-bookings-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .all-bookings-card {
+    flex: 1 1 calc(33% - 16px); /* 3 cards per row, adjust based on your design */
+    box-sizing: border-box;
+  }
+  .all-bookings-btn{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
+  .all-bookings-btn:hover{
+    background-color: black;
+    color: white;
+  }
+  @media (max-width: 1024px) {
+    .all-bookings-card {
+      flex: 1 1 calc(50% - 16px); /* 2 cards per row on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .all-bookings-card {
+      flex: 1 1 100%; /* 1 card per row on mobile */
+    }
+  }
+  

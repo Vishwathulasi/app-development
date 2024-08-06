@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.manage-container {
+    padding: 40px;
+    background-color: black;
+    min-height: 800px;
+    padding-top: 150px;
+}
+  
+.manage-events-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+  
+.manage-events-head h1 {
+    font-size: 32px;
+    margin: 0 auto;
+}
+  
+.manage-events-head-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.manage-events-head p {
+    font-size: 18px;
+}
+  
+.manage-event-btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.manage-event-btn:hover {
+    background-color: white;
+    color: black;
+}
+  
+.manage-card-btn{
+    padding: 10px 10px;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+  
+.manage-card-btn:hover{
+    background-color: black;
+    color: white;
+}
+  
+.manage-dialog-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px 5px;
+    text-align: center;
+}
+  
+.manage-dialog-btn:hover{
+    background-color: black;
+    color: white;
+}
+  
+.manage-events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+  
+.manage-events-card {
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Ensure the card height is 400px */
+    background-color: white;
+    color: black;
+    overflow: hidden; /* Prevent content overflow */
+}
+  
+.manage-card-content {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+  
+.manage-event-title {
+    margin-bottom: 16px;
+}
+  
+.manage-card-actions {
+    margin-top: 1px; /* Adjust the margin to move buttons up */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add space between the buttons */
+}
+  
+.event-snack {
+    background-color: black;
+    color: white;
+}
+  
+@media (max-width: 768px) {
+    .manage-events-head {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .manage-events-head-right {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .manage-events-head h1 {
+        font-size: 24px;
+    }
+  
+    .manage-events-head p {
+        font-size: 16px;
+    }
+  
+    .manage-event-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+  
+    .manage-card-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Venue Section */
+.manage-venue-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.manage-venue-head h1 {
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+.manage-venue-head-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.manage-venue-head p {
+    font-size: 18px;
+}
+
+.manage-venue-btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.manage-venue-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.manage-venues {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.manage-venue-card {
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Ensure the card height is 400px */
+    background-color: white;
+    color: black;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.manage-venue-card-content {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.manage-venue-card-actions {
+    margin-top: 1px; /* Adjust the margin to move buttons up */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add space between the buttons */
+}
